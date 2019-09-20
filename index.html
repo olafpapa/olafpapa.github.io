@@ -9,7 +9,7 @@
 
             /* ここにjQueryのコードを記述 */
             $('img').bind('click', function () {
-                alert("tap");
+                Flutter.postMessage('Hello World being called from Javascript code');
             });
         });
 
