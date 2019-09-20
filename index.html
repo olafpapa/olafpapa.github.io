@@ -5,18 +5,21 @@
 <head>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript">
-        $('.thumb img').bind('tap', function () {
-            alert("tap");
-            //bind tap event to an img tag with the class thumb
-        }
+        $(function () {
+
+            /* ここにjQueryのコードを記述 */
+            $('img').bind('click', function () {
+                alert("tap");
+            });
+        });
+
     </script>
 </head>
 
 <body>
     <h1>Hello World</h1>
     <p>I'm hosted with GitHub Pages.</p>
-    <img class="thumb" src="http://logomarkmania.up.seesaa.net/donburi/yoshinoya_logo.gif" width="200"
-        height="200" />
+    <img src="http://logomarkmania.up.seesaa.net/donburi/yoshinoya_logo.gif"/>
 </body>
 
 </html>
